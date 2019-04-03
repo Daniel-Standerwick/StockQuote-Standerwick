@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">StockQuote-Standerwick</string>
+    <string name="CompanyName">Insert Symbol</string>
+    <string name="StockQuote">StockQuote</string>
+    <string name="GetQuote">Get Quote!</string>
+    <string name="symbol">Symbol: </string>
+    <string name="Name">Name: </string>
+    <string name="LTP">Last Trade Price: </string>
+    <string name="LTT">Last Trade Time: </string>
+    <string name="Change">Change: </string>
+    <string name="WeekRange">52 Week Range: </string>
 </resources>
