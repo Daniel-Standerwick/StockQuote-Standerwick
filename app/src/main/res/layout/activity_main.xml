@@ -20,11 +20,11 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/Symbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:hint="@string/CompanyName"
         android:inputType="text"
@@ -38,11 +38,138 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:text="@string/GetQuote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/Symbol" />
+
+    <TextView
+        android:id="@+id/ToReturn"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:textSize="18sp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToReturn"
+        tools:textSize="18sp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/LTP"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/LTP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        tools:textSize="18sp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/LTT"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/LTT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LTP"
+        tools:textSize="18sp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/Change"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Change"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LTT"
+        tools:textSize="18sp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/WeekRange"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/WeekRange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Change"
+        tools:textSize="18sp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/NameR"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/NameR"
+        app:layout_constraintStart_toEndOf="@+id/Name"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/LTPR"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/LTPR"
+        app:layout_constraintStart_toEndOf="@+id/LTP"
+        app:layout_constraintTop_toBottomOf="@+id/NameR"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/LTTPR"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/LTTR"
+        app:layout_constraintStart_toEndOf="@+id/LTT"
+        app:layout_constraintTop_toBottomOf="@+id/LTPR"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ChangeR"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ChangeR"
+        app:layout_constraintStart_toEndOf="@+id/Change"
+        app:layout_constraintTop_toBottomOf="@+id/LTTPR"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/WeekRangeR"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/WeekRangeR"
+        app:layout_constraintStart_toEndOf="@+id/WeekRange"
+        app:layout_constraintTop_toBottomOf="@+id/ChangeR"
+        tools:textSize="18sp" />
 
 </android.support.constraint.ConstraintLayout>

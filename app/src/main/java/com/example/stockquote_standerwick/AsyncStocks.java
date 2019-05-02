@@ -27,13 +27,13 @@ public class AsyncStocks extends AsyncTask<Stock, Void, Stock> {
 
     @Override
     protected void onPostExecute(Stock s){
-        super.onPostExecute (s);
-        info[0].setText (s.getSymbol ());
-        info[1].setText (s.getLastTradeTime ());
-        info[2].setText (s.getLastTradePrice ());
-        info[3].setText (s.getChange ());
-        info[4].setText (s.getRange ());
-        info[5].setText (s.getName ());
+        super.onPostExecute (theStock);
+        info[0].setText (theStock.getSymbol ());
+        info[1].setText (theStock.getLastTradeTime ());
+        info[2].setText (theStock.getLastTradePrice ());
+        info[3].setText (theStock.getChange ());
+        info[4].setText (theStock.getRange ());
+        info[5].setText (theStock.getName ());
     }
 
 
