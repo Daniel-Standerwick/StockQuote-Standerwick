@@ -17,7 +17,7 @@ public class AsyncStocks extends AsyncTask<Stock, Void, Stock> {
     protected Stock doInBackground(Stock... stocks) {
 
         try{
-            theStock.load ( );
+            theStock.load ();
             return theStock;
         }
         catch (Exception e){
@@ -27,7 +27,7 @@ public class AsyncStocks extends AsyncTask<Stock, Void, Stock> {
 
     @Override
     protected void onPostExecute(Stock s){
-        super.onPostExecute (theStock);
+        super.onPostExecute (s);
         info[0].setText (theStock.getSymbol ());
         info[1].setText (theStock.getLastTradeTime ());
         info[2].setText (theStock.getLastTradePrice ());

@@ -6,9 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         Result = (TextView) findViewById (R.id.ToReturn);
         Symbol = (EditText) findViewById (R.id.Symbol);
 
-        NameR = (TextView) findViewById (R.id.Name);
+        NameR = (TextView) findViewById (R.id.NameR);
         LTPR = (TextView) findViewById (R.id.LTPR);
         LTTR = (TextView) findViewById (R.id.LTTPR);
-        ChangeR = (TextView) findViewById (R.id.Change);
-        WeekRangeR = (TextView) findViewById (R.id.WeekRange);
+        ChangeR = (TextView) findViewById (R.id.ChangeR);
+        WeekRangeR = (TextView) findViewById (R.id.WeekRangeR);
 
         stockInfo = new TextView[]{Symbol, LTTR, LTPR, ChangeR, WeekRangeR, NameR};
 
